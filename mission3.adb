@@ -7,6 +7,7 @@ with Carburant;
 with Tour;
 with Pilote_Automatique;
 with Cartographie;
+with GAda.Integer_Text_IO;
 
 procedure Mission3b is
 
@@ -310,9 +311,7 @@ begin
 	      Train.Deplacer_Train(FALSE);
 	      INSA_AIR.Regler_Reacteur(Force=>6);
 	     end Decollage;
-	     
-	     
-	     
+	         
 	      procedure Marqueur is 
 		R1:Float;
 		R2:Float:=100000000.0;
@@ -343,19 +342,22 @@ begin
 		R2:Float:=100000000.0;
 		C:Integer;
 		F:Integer:=20;
+		TF:Float:=0.0;
+	 
 
-		 begin
-		 for T  in 21..Cartographie.Nb_Aeroports loop
+		    begin
+		       TF:=TF+1.0;
+		       for T  in 21..Cartographie.Nb_Aeroports loop
 		    R1:=Distance_Modified(Cartographie.Code_Aeroport(T));
 		    F:=F+1;
 		    if R1<R2 then
 		       C:=F;
 		       R2:=R1;
 		       end if;
-		   
-
-		 end loop;
-		 Cartographie.Placer_Marque(Cartographie.Coords_Aeroport(Cartographie.Code_Aeroport(C)));
+			  end loop;
+			  Cartographie.Placer_Marque(Cartographie.Coords_Aeroport(Cartographie.Code_Aeroport(C)));
+		
+	
 
        
 		
@@ -369,32 +371,86 @@ begin
 	      
 	      
 	     procedure Naviguer_Vers(Code:String) is
+		R1:Float;
+		R2:Float:=100000000.0;
+		C:Integer;
+		F:Integer:=20;
+		TF:Float:=0.0;
 	     begin
+		 for T  in 21..Cartographie.Nb_Aeroports loop
+		    R1:=Distance_Modified(Cartographie.Code_Aeroport(T));
+		    F:=F+1;
+		    if R1<R2 then
+		       C:=F;
+		       R2:=R1;
+		       end if;
+		       end loop;
 		while Distance_Modified(Code)>100.0 loop
+		   TF:=+1.0;
 		   Marqueur_Hors_France;
-		   Orienter_En_Vol(Cap_Cible(Code));		   
-	   
+		   Orienter_En_Vol(Cap_Cible(Code));
 		end loop;
+			  GAda.Text_IO.Put(Float'Image(R2/TF));
 	     end Naviguer_Vers;
 	     
 
 	     procedure Voler_F is
+		
 	     begin
 		Decollage;
 		Naviguer_Vers("EGLL");
 		Naviguer_Vers("LFST");
 		Naviguer_Vers("LFBO");
 		Atterir;
-		
 		end Voler_F;
 		
-		
-		
-		
-		
-		
-		
 
+		procedure Exam_Training1 is
+		   A:Integer;
+		   begin
+		      GAda.Integer_Text_IO.Get(A);
+		      for F in 0..(A-1) loop
+			 GAda.Text_IO.Put("<");
+			 end loop; 
+		      for F in 0..A loop
+			 GAda.Text_IO.Put(">");
+		      end loop;
+		      
+		   end Exam_Training1;
+		   
+		   procedure Exam_Training2 is
+		      A2:Float;
+		      R2:Float:=10000000.0;
+		      F:Integer:=0;
+		      C:Integer;
+		   begin
+		      for T in  1..Cartographie.Nb_Aeroports loop
+			 A2:=Float(Cartographie.Coords_Aeroport(Cartographie.Code_Aeroport(T)).Lat);
+			 F:=F+1;
+			 if A2<R2 then
+			    C:=F;
+			    R2:=A2;
+			 end if;
+		      end loop;
+		      GAda.Text_IO.Put(Cartographie.Code_Aeroport(C));
+		           GAda.Text_IO.Put(Integer'Image(C));
+			   F:=0;
+			   R2:=10000000.0;
+                        for T in 1..(C-1) loop 
+			 A2:=Float(Cartographie.Coords_Aeroport(Cartographie.Code_Aeroport(T)).Lat);
+			 F:=F+1;
+			 if A2<R2 then
+			    C:=F;
+			    R2:=A2;
+			 end if;
+			end loop;
+		      GAda.Text_IO.Put(Cartographie.Code_Aeroport(C));
+
+		       end Exam_Training2;
+
+		   
+		
+		
 
 begin
    
@@ -405,10 +461,10 @@ begin
  -- Realiser_Vol_Demo;
 -- Tester_Carto;
 Voler_F;
-
+-- Exam_Training1;
+  -- Exam_Training2;
    
-   
-   
+  
    
 
 end Mission3b ;
