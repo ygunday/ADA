@@ -1,0 +1,45 @@
+V "GNAT Lib v4.9"
+M P W=b
+P SS ZX
+
+RN
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV SPARK_05
+
+U mission2%b		mission2.adb		26941a07 NE OO SU
+W gada%s		gada.ads		gada.ali
+W gada.graphics%s	gada-graphics.adb	gada-graphics.ali
+W gada.plus%s		gada-plus.adb		gada-plus.ali
+W gada.text_io%s	gada-text_io.adb	gada-text_io.ali
+W jpg%s			jpg.adb			jpg.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-unccon.ads		20070406091342 f9eb8f06
+D gada.ads		20171011075454 65bf3563
+D gada-graphics.ads	20171011075454 eaa5cc10
+D gada-plus.ads		20171011075454 03672d01
+D gada-text_io.ads	20171011075454 f74da4f3
+D jpg.ads		20171011075454 87df9115
+D mission2.adb		20190201125247 bfc4cef0
+D system.ads		20160213141829 90249111
+D s-secsta.ads		20140225151139 86a2856d
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+X 3 gada.ads
+1K9*GAda 3e9 8|1r6 2r6 4r6 11r7
+X 4 gada-graphics.ads
+1K14*Graphics 60e18 8|1w11
+X 5 gada-plus.ads
+1K14*Plus 11e14 8|2w11 11r12
+9V13*Choisir_Fichier{string} 8|11s17
+X 6 gada-text_io.ads
+1K14*Text_IO 32e17 8|4w11
+X 7 jpg.ads
+10K9*JPG 36e8 8|3w6
+X 8 mission2.adb
+6U11*Mission2 6b11 17l8 17t16
+7U14 Afficher_Image 7b14 12l8 12t22 16s4
+8a7 A{string} 11m4
+

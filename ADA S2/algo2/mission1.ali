@@ -1,0 +1,54 @@
+V "GNAT Lib v4.9"
+M P W=b
+P ZX
+
+RN
+RV SPARK_05
+
+U big%b			mission1.adb		08e525d3 NE OO SU
+W caracteres%s		caracteres.adb		caracteres.ali
+W gada%s		gada.ads		gada.ali
+W gada.integer_text_io%s  gada-integer_text_io.adb  gada-integer_text_io.ali
+W gada.text_io%s	gada-text_io.adb	gada-text_io.ali
+W interfaces%s		interfac.ads		interfac.ali
+
+D mission1.adb		20190201140146 1205a721
+D caracteres.ads	20171011075454 55fa8846
+D gada.ads		20171011075454 65bf3563
+D gada-integer_text_io.ads  20171011075454 b857ae47
+D gada-text_io.ads	20171011075454 f74da4f3
+D interfac.ads		20140225151838 69adb1b9
+D system.ads		20160213141829 90249111
+X 1 mission1.adb
+7U11*Big 7b11 49l5 49t8
+8U11 Mission1 8b11 16l5 16t13
+9i1 A{integer} 12m26 13r26 15r35
+18U11 Afficher_Trame 18b11 18>26 30l5 30t19 37s1
+18a26 U{2|23A9} 23r6
+21i5 T{integer} 23r8
+22i5 H{integer} 23r10
+32U11 Afficher_Mot 32b11 32>24 42l5 42t17 48s4
+32s24 U{string} 34r14 36r29
+34i5 T{integer} 36r31
+35i5 J{integer} 36r22 37r33
+X 2 caracteres.ads
+7K9*Caracteres 1|6w6 15r18 18r28 24r6 25r6 36r5 37r16 2|47e15
+15n21*Eteint{15E9} 1|24r17
+15n29*Allume{15E9} 1|25r17
+23A9*T_Trame(15E9)<integer><integer> 1|18r39
+28e7*Car{character} 1|15r38 36r25
+29a7*Trame{23A9} 1|37r36
+37A9*T_Table(27R9)<integer>
+40a4*Table{37A9} 1|15r29 36r16 37r27
+X 3 gada.ads
+1K9*GAda 1|4r6 5r6 11r1 12r1 13r1 14r1 15r1 24r27 25r27 28r1 40r1 3|3e9
+X 4 gada-integer_text_io.ads
+1K14*Integer_Text_IO 1|5w11 12r6 13r6 4|12e25
+7U14*Put 1|13s22
+10U14*Get 1|12s22
+X 5 gada-text_io.ads
+1K14*Text_IO 1|4w11 11r6 14r6 15r6 24r32 25r32 28r6 40r6 5|32e17
+4U14*Put 1|11s14 24s40 25s40
+10U14*New_Line 1|14s14 28s14 40s14
+19U14*Put 1|15s14
+
