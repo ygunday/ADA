@@ -1,0 +1,57 @@
+V "GNAT Lib v4.9"
+M P W=b
+P SS ZX
+
+RN
+RV NO_SECONDARY_STACK
+RV SPARK_05
+
+U mission2%b		mission2.adb		adbc83ea NE OO SU
+W gada%s		gada.ads		gada.ali
+W gada.graphics%s	gada-graphics.adb	gada-graphics.ali
+W gada.integer_text_io%s  gada-integer_text_io.adb  gada-integer_text_io.ali
+W gada.plus%s		gada-plus.adb		gada-plus.ali
+W gada.text_io%s	gada-text_io.adb	gada-text_io.ali
+W jpg%s			jpg.adb			jpg.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-unccon.ads		20070406091342 f9eb8f06
+D gada.ads		20141110081047 65bf3563
+D gada-graphics.ads	20141110081047 eaa5cc10
+D gada-integer_text_io.ads  20141110081047 b857ae47
+D gada-plus.ads		20141110081047 03672d01
+D gada-text_io.ads	20141110081047 f74da4f3
+D jpg.ads		20140904153014 87df9115
+D mission2.adb		20190201202211 8cbbf95a
+D system.ads		20160213141829 90249111
+D s-secsta.ads		20140225151139 86a2856d
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+X 3 gada.ads
+1K9*GAda 3e9 9|1r6 2r6 4r6 5r6 11r9 13r12 15r12 16r12 18r12 29r37
+X 4 gada-graphics.ads
+1K14*Graphics 60e18 9|1w11 11r14 16r17
+13U14*Resize 9|11s23
+31U14*ColorPoint 9|16s26
+X 5 gada-integer_text_io.ads
+1K14*Integer_Text_IO 12e25 9|5w11
+X 6 gada-plus.ads
+1K14*Plus 11e14 9|2w11 29r42
+9V13*Choisir_Fichier{string} 9|29s47
+X 7 gada-text_io.ads
+1K14*Text_IO 32e17 9|4w11 13r17 15r17 18r17
+4U14*Put 9|13s25 15s25
+10U14*New_Line 9|18s25
+X 8 jpg.ads
+10K9*JPG 36e8 9|3w6 8r33 29r22
+15A9*T_Image(4|23R9)<integer><integer> 9|8r37
+26V13*Lire_Image{15A9} 9|29s26
+X 9 mission2.adb
+7U11*Mission2 7b11 37l8 37t16
+8U14 Afficher_Image 8b14 8>29 25l8 25t22 29s7
+8a29 Img{8|15A9} 11r30 11r44 12r23 14r26 16r41
+12i13 Z{integer} 16r39 16r47
+14i16 K{integer} 16r37 16r45
+27U14 Tester_Image 27b14 34l11 34t23 36s4
+

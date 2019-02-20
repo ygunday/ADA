@@ -1,0 +1,92 @@
+V "GNAT Lib v4.9"
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_ANONYMOUS_ALLOCATORS
+RV NO_EXCEPTIONS
+RV NO_IMPLICIT_LOOPS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U rois%b		rois.adb		bf8b859a OO PK
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W gada%s		gada.ads		gada.ali
+W gada.core%s		gada-core.adb		gada-core.ali
+W gada.text_io%s	gada-text_io.adb	gada-text_io.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.concat_6%s	s-conca6.adb		s-conca6.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+U rois%s		rois.ads		c8d6fa8a EE NE OO PK
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20140129161953 f86a4103
+D a-finali.ads		20111121113555 52ecdc1b
+D a-stream.ads		20140122164720 1a984740
+D a-tags.ads		20111212115430 6c0509d0
+D a-unccon.ads		20070406091342 f9eb8f06
+D a-uncdea.ads		20070406091342 f15a5ed1
+D gada.ads		20141110081047 65bf3563
+D gada-core.ads		20141110081047 fdce064e
+D gada-text_io.ads	20141110081047 f74da4f3
+D glib.ads		20141109231518 0f441d83
+D interfac.ads		20140225151838 69adb1b9
+D i-c.ads		20110801143639 5421119b
+D rois.ads		20190218162735 c8d6fa8a
+D rois.adb		20190218162803 7ddeddad
+D system.ads		20160213141829 90249111
+D s-conca3.ads		20140225151544 0b705ca5
+D s-conca6.ads		20140225151544 d2c72db2
+D s-exctab.ads		20140225151139 54135002
+D s-finmas.ads		20140225151139 814daec4
+D s-finroo.ads		20120426095924 4ff27390
+D s-imgint.ads		20090409150019 02dbe0c2
+D s-parame.ads		20140225151139 ab8cb46a
+D s-pooglo.ads		20110804083314 542f33d0
+D s-secsta.ads		20140225151139 86a2856d
+D s-soflin.ads		20140225151139 aa763b52
+D s-stache.ads		20140225151139 a37c21ec
+D s-stalib.ads		20140225151139 a891183f
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+D s-stopoo.ads		20131010103753 b16154c2
+D s-stposu.ads		20121005142121 ffeba1c5
+D s-traent.ads		20140225151139 b5116092
+X 8 gada.ads
+1K9*GAda 3e9 15|1r6 2r6 6r24 17r16 117r10
+X 9 gada-core.ads
+3K14*Core 56e14 15|1w11 17r21 117r15
+33U14*Put_Err 15|117s20
+53X4*Boucle_Infinie 15|17r26
+X 10 gada-text_io.ads
+1K14*Text_IO 32e17 15|2w11 6r29
+X 14 rois.ads
+5K9*Rois 22l5 22e9 15|4b14 141l5 141t9
+11V13*Nb_Rois{integer} 15|110b13
+14V13*Nom{string} 14>18 15|135b13 139l8 139t11
+14i18 Roi{integer} 15|135b18 137r19 138r28
+17V13*Debut{integer} 17>20 15|123b13 127l8 127t13
+17i20 Roi{integer} 15|123b20 125r19 126r22
+20V13*Fin{integer} 20>18 15|129b13 133l8 133t11
+20i18 Roi{integer} 15|129b18 131r19 132r22
+X 15 rois.adb
+6K12 Txt=6:29
+9i4 Nb_Appels{integer} 15m7 15r20 16r10
+11i4 Max_Appels{integer} 16r22
+13U14 Compte_Appel 13b14 19l8 19t20 106s7 114s7
+21R9 T_Info 25e15 27r52
+22p7*V1(string) 138r33
+23i7*V2{integer} 126r27
+24i7*V3{integer} 132r27
+27A9 T_Objects(21R9)<integer> 29r14
+29a4 Objects{27A9} 107r14 115r20 126r14 132r14 138r20
+104V13 Nb_Objects{integer} 104b13 108l8 108t18 110r44 118s94
+112U14 Check_Range 112b14 112>27 112>42 121l8 121t19 125s7 131s7 137s7
+112i27 No{integer} 115r10 117r109
+112s42 Msg{string} 117r51
+

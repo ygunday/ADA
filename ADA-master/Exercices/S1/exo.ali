@@ -1,0 +1,55 @@
+V "GNAT Lib v4.9"
+M P W=b
+P SS ZX
+
+RN
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV SPARK_05
+
+U mission%b		exo.adb			330cab3c NE OO SU
+W gada%s		gada.ads		gada.ali
+W gada.text_io%s	gada-text_io.adb	gada-text_io.ali
+W rois%s		rois.adb		rois.ali
+W system.concat_4%s	s-conca4.adb		s-conca4.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-unccon.ads		20070406091342 f9eb8f06
+D gada.ads		20141110081047 65bf3563
+D gada-text_io.ads	20141110081047 f74da4f3
+D exo.adb		20190218171650 0c97f545
+D rois.ads		20190218162735 c8d6fa8a
+D system.ads		20160213141829 90249111
+D s-conca4.ads		20140225151544 7e642b20
+D s-imgint.ads		20090409150019 02dbe0c2
+D s-secsta.ads		20140225151139 86a2856d
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+X 3 gada.ads
+1K9*GAda 3e9 5|2r6 4r23
+X 4 gada-text_io.ads
+1K14*Text_IO 32e17 5|2w11 4r28
+7U14*Put_Line 5|9s10 46s8 47s8
+X 5 exo.adb
+3U11*Mission 3b11 48l5 48t12
+4K11 Txt=4:28 9r6 46r4 47r4
+5U11 Sort 5b11 11l7 11t11 45s4
+8i7 T{integer} 9r28 9r58 9r92
+13V12 Sortmin{integer} 13b12 24l7 24t14 47s26
+14i6 C{integer} 18r38 19m12
+15i6 F{integer} 20m12 23r13
+17i10 A{integer} 18r21 18r35 19r24 19r38 20r15
+26V12 Sortmax{integer} 26b12 37l10 37t17 46s26
+27i6 B{integer} 31r42 32m12
+28i6 X{integer} 33m12 36r16
+30i13 A{integer} 31r22 31r38 32r25 32r41 33r15
+X 6 rois.ads
+5K9*Rois 5|1w6 8r16 9r19 9r47 9r83 17r19 18r12 18r24 19r15 19r27 30r22 31r13
+. 31r27 32r16 32r30 46r17 47r17 6|22e9
+11V13*Nb_Rois{integer} 5|8s21 17s24 30s27
+14V13*Nom{string} 5|9s24 46s22 47s22
+17V13*Debut{integer} 5|9s52 18s29 19s32 31s32 32s35
+20V13*Fin{integer} 5|9s88 18s17 19s20 31s18 32s21
+

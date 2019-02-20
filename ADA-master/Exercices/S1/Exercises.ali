@@ -1,0 +1,65 @@
+V "GNAT Lib v4.9"
+M P W=b
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV SPARK_05
+
+U exercices%b		Exercises.adb		c0f4f437 NE OO SU
+W cartographie%s	cartographie.adb	cartographie.ali
+W gada%s		gada.ads		gada.ali
+W gada.integer_text_io%s  gada-integer_text_io.adb  gada-integer_text_io.ali
+W gada.text_io%s	gada-text_io.adb	gada-text_io.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.img_real%s	s-imgrea.adb		s-imgrea.ali
+
+D cartographie.ads	20131030162112 703ea294
+D Exercises.adb		20190216141252 ffd05c17
+D gada.ads		20141110081047 65bf3563
+D gada-integer_text_io.ads  20141110081047 b857ae47
+D gada-text_io.ads	20141110081047 f74da4f3
+D system.ads		20160213141829 90249111
+D s-conca2.ads		20140225151544 02a0d7d0
+D s-imgint.ads		20090409150019 02dbe0c2
+D s-imgrea.ads		20090409150019 c7a851e2
+X 1 cartographie.ads
+6K9*Cartographie 56e17 2|3w6 7r26
+54V13*SQRT{float} 2|82s52 83s47
+X 2 Exercises.adb
+4U11*Exercices 4b11 93l8 93t17
+5K14 T=5:29 11r6 22r6 38r6 39r6 40r6 42r6 45r9 56r9 58r6 59r6 60r6 70r6 71r6
+. 73r6 75r6 80r9 82r9 83r9
+6K14 I=6:29 12r19 15r6 23r19 26r6 41r9 55r12 72r10 74r10 76r10
+7K14 Ctg=7:26 82r48 83r43
+8U13 Factorielle 8b13 17l7 17t18
+9i6 S{integer} 13m9 13r15 15r12
+12i10 X{integer} 13r13
+19U13 Somme_N 19b13 27l7 27t14
+20i6 A{integer} 24m9 24r13 26r12
+23i10 X{integer} 24r15
+29U13 Analysis 29b13 62l7 62t15
+30i6 A{integer} 46r15 47m12 54r27 58r50
+31i6 B{integer} 43m6 49r15 50m12 59r50
+32i6 C{integer} 53m9 53r12 54r18
+33i6 D{integer} 41m6 43r9 44r12 46r12 47r15 49r12 50r15 53r14 55m9
+34f6 E{float} 54m9 60r52
+35i6 F{integer} 52m9 52r12
+64U13 Racine 64b13 86l10 86t16 92s6
+65i6 A{integer} 72m6 78r25 82r70 83r65
+66i6 B{integer} 74m6 78r17 78r19 82r43 83r38
+67i6 C{integer} 76m6 78r27
+68f6 D{float} 78m6 79r9 82r57 83r52
+X 3 gada.ads
+1K9*GAda 2|1r6 2r6 5r24 6r24 3|3e9
+X 4 gada-integer_text_io.ads
+1K14*Integer_Text_IO 2|2w11 6r29 4|12e25
+4V13*FGet{integer} 2|12s21 23s21 41s11 55s14 72s12 74s12 76s12
+7U14*Put 2|15s8 26s8
+X 5 gada-text_io.ads
+1K14*Text_IO 2|1w11 5r29 5|32e17
+4U14*Put 2|11s8 22s8 40s8 45s11 71s8 73s8 75s8 80s11 83s11
+7U14*Put_Line 2|38s8 58s8 59s8 60s8 70s8 82s11
+10U14*New_Line 2|39s8 42s8 56s11
+
