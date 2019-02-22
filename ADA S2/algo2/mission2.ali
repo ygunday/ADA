@@ -4,12 +4,12 @@ P SS ZX
 
 RN
 RV NO_SECONDARY_STACK
-RV NO_STANDARD_STORAGE_POOLS
 RV SPARK_05
 
-U mission2%b		mission2.adb		26941a07 NE OO SU
+U mission2%b		mission2.adb		12b8cd94 NE OO SU
 W gada%s		gada.ads		gada.ali
 W gada.graphics%s	gada-graphics.adb	gada-graphics.ali
+W gada.integer_text_io%s  gada-integer_text_io.adb  gada-integer_text_io.ali
 W gada.plus%s		gada-plus.adb		gada-plus.ali
 W gada.text_io%s	gada-text_io.adb	gada-text_io.ali
 W jpg%s			jpg.adb			jpg.ali
@@ -19,27 +19,63 @@ D ada.ads		20070406091342 3ffc8e18
 D a-unccon.ads		20070406091342 f9eb8f06
 D gada.ads		20171011075454 65bf3563
 D gada-graphics.ads	20171011075454 eaa5cc10
+D gada-integer_text_io.ads  20171011075454 b857ae47
 D gada-plus.ads		20171011075454 03672d01
 D gada-text_io.ads	20171011075454 f74da4f3
 D jpg.ads		20171011075454 87df9115
-D mission2.adb		20190201125247 bfc4cef0
+D mission2.adb		20190222160029 33bfb724
 D system.ads		20160213141829 90249111
 D s-secsta.ads		20140225151139 86a2856d
 D s-stoele.ads		20140225151139 2dc34a04
 D s-stoele.adb		20140225151139 ed88f8fb
 X 3 gada.ads
-1K9*GAda 3e9 8|1r6 2r6 4r6 11r7
+1K9*GAda 3e9 9|1r6 2r6 4r6 5r6 12r9 15r12 26r10 31r7 35r12 41r12 47r12 57r12
+. 65r38
 X 4 gada-graphics.ads
-1K14*Graphics 60e18 8|1w11
-X 5 gada-plus.ads
-1K14*Plus 11e14 8|2w11 11r12
-9V13*Choisir_Fichier{string} 8|11s17
-X 6 gada-text_io.ads
-1K14*Text_IO 32e17 8|4w11
-X 7 jpg.ads
-10K9*JPG 36e8 8|3w6
-X 8 mission2.adb
-6U11*Mission2 6b11 17l8 17t16
-7U14 Afficher_Image 7b14 12l8 12t22 16s4
-8a7 A{string} 11m4
+1K14*Graphics 60e18 9|1w11 12r14 15r17 26r15 31r12 35r17 41r17 47r17 57r17
+13U14*Resize 9|12s23 31s21
+23R9*T_Couleur 27e15 9|26r24
+24i7*Rouge{integer} 9|41r73 47r81 53r45 54m21
+25i7*Vert{integer} 9|41r59 47r63 53r31 56m21
+26i7*Bleu{integer} 9|41r88 47r100 53r60 55m21
+31U14*ColorPoint 9|15s26 35s26 41s26 47s26 57s26
+X 5 gada-integer_text_io.ads
+1K14*Integer_Text_IO 12e25 9|5w11
+X 6 gada-plus.ads
+1K14*Plus 11e14 9|2w11 65r43
+9V13*Choisir_Fichier{string} 9|65s48
+X 7 gada-text_io.ads
+1K14*Text_IO 32e17 9|4w11
+X 8 jpg.ads
+10K9*JPG 36e8 9|3w6 8r33 22r31 65r23
+15A9*T_Image(4|23R9)<integer><integer> 9|8r37 22r35
+26V13*Lire_Image{15A9} 9|65s27
+X 9 mission2.adb
+7U11*Mission2 7b11 73l8 73t16
+8U14 Afficher_Image 8b14 8>29 8>45 8>55 19l8 19t22
+8a29 Img{8|15A9} 11r10 12r32 12r48 13r20 13r36 14r23 14r39 15r47
+8i45 X{integer} 15r39
+8i55 Y{integer} 15r45
+9i7 H{integer} 11m7 15r41
+13i13 Z{integer} 15r37 15r53
+14i16 K{integer} 15r43 15r51
+22U11 Afficher_Image2 22b11 22>27 22>43 22>53 61l8 61t23 65s7
+22a27 Img{8|15A9} 29r10 30r10 31r30 31r46 33r20 33r36 34r23 34r39 35r47 39r20
+. 39r36 40r23 40r39 41r50 41r64 41r79 45r20 45r36 46r23 46r39 47r54 47r72
+. 47r91 51r20 51r36 52r23 52r39 53r22 53r36 53r51
+22i43 X{integer} 35r39 41r39 47r39 57r39
+22i53 Y{integer} 35r45 41r45 47r47 57r47
+23i4 H{integer} 29m7 35r41 41r41 41r47 47r43 57r43 57r49
+24i4 A{integer} 30m7 47r41 57r41
+25i4 Val{integer} 53m15 54r28 55r27 56r27
+26r4 Color{4|23R9} 54m15 55m15 56m15 57r51
+33i13 Z{integer} 35r37 35r53
+34i16 K{integer} 35r43 35r51
+39i13 Z{integer} 41r37 41r56 41r70 41r85
+40i16 K{integer} 41r43 41r54 41r68 41r83
+45i13 Z{integer} 47r37 47r60 47r78 47r97
+46i16 K{integer} 47r45 47r58 47r76 47r95
+51i13 Z{integer} 53r28 53r42 53r57 57r37
+52i16 K{integer} 53r26 53r40 53r55 57r45
+63U14 Tester_Image 63b14 70l11 70t23 72s4
 
