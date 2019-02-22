@@ -6,7 +6,7 @@ RN
 RV NO_SECONDARY_STACK
 RV SPARK_05
 
-U mission2%b		mission2.adb		adbc83ea NE OO SU
+U mission2%b		mission2.adb		51fbab96 NE OO SU
 W gada%s		gada.ads		gada.ali
 W gada.graphics%s	gada-graphics.adb	gada-graphics.ali
 W gada.integer_text_io%s  gada-integer_text_io.adb  gada-integer_text_io.ali
@@ -23,35 +23,52 @@ D gada-integer_text_io.ads  20141110081047 b857ae47
 D gada-plus.ads		20141110081047 03672d01
 D gada-text_io.ads	20141110081047 f74da4f3
 D jpg.ads		20140904153014 87df9115
-D mission2.adb		20190201202211 8cbbf95a
+D mission2.adb		20190222152521 70fcd126
 D system.ads		20160213141829 90249111
 D s-secsta.ads		20140225151139 86a2856d
 D s-stoele.ads		20140225151139 2dc34a04
 D s-stoele.adb		20140225151139 ed88f8fb
 X 3 gada.ads
-1K9*GAda 3e9 9|1r6 2r6 4r6 5r6 11r9 13r12 15r12 16r12 18r12 29r37
+1K9*GAda 3e9 9|1r6 2r6 4r6 5r6 12r9 15r12 28r7 32r12 38r12 46r12 53r12 61r38
 X 4 gada-graphics.ads
-1K14*Graphics 60e18 9|1w11 11r14 16r17
-13U14*Resize 9|11s23
-31U14*ColorPoint 9|16s26
+1K14*Graphics 60e18 9|1w11 12r14 15r17 28r12 32r17 38r17 46r17 53r17
+13U14*Resize 9|12s23 28s21
+31U14*ColorPoint 9|15s26 32s26 38s26 46s26 53s26
 X 5 gada-integer_text_io.ads
 1K14*Integer_Text_IO 12e25 9|5w11
 X 6 gada-plus.ads
-1K14*Plus 11e14 9|2w11 29r42
-9V13*Choisir_Fichier{string} 9|29s47
+1K14*Plus 11e14 9|2w11 61r43
+9V13*Choisir_Fichier{string} 9|61s48
 X 7 gada-text_io.ads
-1K14*Text_IO 32e17 9|4w11 13r17 15r17 18r17
-4U14*Put 9|13s25 15s25
-10U14*New_Line 9|18s25
+1K14*Text_IO 32e17 9|4w11
 X 8 jpg.ads
-10K9*JPG 36e8 9|3w6 8r33 29r22
-15A9*T_Image(4|23R9)<integer><integer> 9|8r37
-26V13*Lire_Image{15A9} 9|29s26
+10K9*JPG 36e8 9|3w6 8r33 22r31 61r23
+15A9*T_Image(4|23R9)<integer><integer> 9|8r37 22r35
+26V13*Lire_Image{15A9} 9|61s27
 X 9 mission2.adb
-7U11*Mission2 7b11 37l8 37t16
-8U14 Afficher_Image 8b14 8>29 25l8 25t22 29s7
-8a29 Img{8|15A9} 11r30 11r44 12r23 14r26 16r41
-12i13 Z{integer} 16r39 16r47
-14i16 K{integer} 16r37 16r45
-27U14 Tester_Image 27b14 34l11 34t23 36s4
+7U11*Mission2 7b11 69l8 69t16
+8U14 Afficher_Image 8b14 8>29 8>45 8>55 19l8 19t22
+8a29 Img{8|15A9} 11r10 12r32 12r48 13r20 13r36 14r23 14r39 15r47
+8i45 X{integer} 15r39
+8i55 Y{integer} 15r45
+9i7 H{integer} 11m7 15r41
+13i13 Z{integer} 15r37 15r53
+14i16 K{integer} 15r43 15r51
+22U11 Afficher_Image2 22b11 22>27 22>43 22>53 57l8 57t23 61s7
+22a27 Img{8|15A9} 26r10 27r10 28r30 28r46 30r20 30r36 31r23 31r39 32r47 36r20
+. 36r36 37r23 37r39 38r49 44r20 44r36 45r23 45r39 46r49 51r20 51r36 52r23
+. 52r39 53r51
+22i43 X{integer} 32r39 38r39 46r39 53r39
+22i53 Y{integer} 32r45 38r45 46r45 53r47
+23i4 H{integer} 26m7 32r41 38r41 38r47 46r41 46r47 53r43 53r49
+24i4 A{integer} 27m7 53r41
+30i13 Z{integer} 32r37 32r51
+31i16 K{integer} 32r43 32r53
+36i13 Z{integer} 38r37 38r53
+37i16 K{integer} 38r43 38r55
+44i13 Z{integer} 46r37 46r55
+45i16 K{integer} 46r43 46r53
+51i13 Z{integer} 53r37 53r57
+52i16 K{integer} 53r45 53r55
+59U14 Tester_Image 59b14 66l11 66t23 68s4
 
